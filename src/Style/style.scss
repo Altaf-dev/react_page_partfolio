@@ -1,0 +1,81 @@
+@import "color";
+@import "title";
+@import "../Main/main";
+@import "../Navigate/navbar";
+
+
+* {
+  box-sizing: border-box;
+
+  &:after,
+  &:before {
+    transition: inherit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  overflow-x: hidden;
+  color: $black-color;
+}
+
+:root {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color;
+  transition: .3s;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  background: none;
+  border: none;
+  padding: 0;
+  color: $text-color;
+  cursor: pointer;
+  transition: .3s;
+}
+
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+//Точки для адаптива
+@media screen and (max-width: 1600px) {
+
+}
+@media screen and (max-width: 1400px) {
+
+}
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 425px) {
+
+}
