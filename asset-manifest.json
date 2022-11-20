@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_page_partfolio/static/css/main.2c828f70.css",
-    "main.js": "/react_page_partfolio/static/js/main.2bdf27f2.js",
+    "main.js": "/react_page_partfolio/static/js/main.189acc88.js",
     "static/js/787.5d1af5f9.chunk.js": "/react_page_partfolio/static/js/787.5d1af5f9.chunk.js",
     "static/media/avtovoz.jpg": "/react_page_partfolio/static/media/avtovoz.425b2678e17819c69ca3.jpg",
     "static/media/certificate5.png": "/react_page_partfolio/static/media/certificate5.24e304fbd020ce3d8070.png",
@@ -33,11 +33,11 @@
     "static/media/GIT.svg": "/react_page_partfolio/static/media/GIT.453c9e8c918cdb580251378a7042ae5a.svg",
     "static/media/WEBPACK.svg": "/react_page_partfolio/static/media/WEBPACK.344c587962fa7fda49e86ac11b466320.svg",
     "main.2c828f70.css.map": "/react_page_partfolio/static/css/main.2c828f70.css.map",
-    "main.2bdf27f2.js.map": "/react_page_partfolio/static/js/main.2bdf27f2.js.map",
+    "main.189acc88.js.map": "/react_page_partfolio/static/js/main.189acc88.js.map",
     "787.5d1af5f9.chunk.js.map": "/react_page_partfolio/static/js/787.5d1af5f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c828f70.css",
-    "static/js/main.2bdf27f2.js"
+    "static/js/main.189acc88.js"
   ]
 }
