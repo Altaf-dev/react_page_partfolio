@@ -24,9 +24,10 @@ export class Navbar extends React.Component {
                 <div className="container">
                     <nav className="header__menu">
                         <ul className={this.state.className ? 'menu active':'menu'}>
-                            <NavLink className="menu-item" to="/main">Главная</NavLink>
+                            <NavLink className="menu-item" to="/react_page_portfolio/">Главная</NavLink>
                             <NavLink className="menu-item" to="/about">Обо мне</NavLink>
                             <NavLink className="menu-item" to="/skills">Навыки</NavLink>
+                            <NavLink className="menu-item" to="/certificate">Сертификаты</NavLink>
                             <NavLink className="menu-item" to="/portfolio">Мои работы</NavLink>
                             <NavLink className="menu-item" to="/contact">Контакты</NavLink>
                         </ul>

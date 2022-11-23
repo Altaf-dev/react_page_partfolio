@@ -15,7 +15,7 @@ export function Certificate()  {
                         modules={[Navigation]}
                         loop={true}
                         spaceBetween={20}
-                        slidesPerView={3}
+                        slidesPerView={2}
                         navigation={{
                             prevEl: '.certificate-next',
                             nextEl: '.certificate-prev',
@@ -63,12 +63,12 @@ export function Certificate()  {
                             </div>
                         </SwiperSlide>
                     </Swiper>
-                    <div className="certificate-prev"></div>
-                    <div className="certificate-next"></div>
+                    <div className="certificate-prev slide-prev"></div>
+                    <div className="certificate-next slide-next"></div>
                 </div>
             </div>
         </section>
     );
-};
+}
 
 export default Certificate

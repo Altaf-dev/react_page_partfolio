@@ -1,0 +1,112 @@
+@import "../style/color";
+
+.portfolio {
+  padding: 50px 0;
+
+  .title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    //width: calc(100% + 40px);
+    //margin-left: -20px;
+  }
+
+  &__list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px -8px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    transition: .3s;
+    &:hover {
+      -webkit-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2) inset;
+      -moz-box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2) inset;
+      box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.2) inset;
+      .item-link {
+        transform: scale(1);
+      }
+      .item-img {
+        filter: blur(5px);
+        transform: scale(0.95);
+      }
+    }
+  }
+
+  .item-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    transition: .3s;
+  }
+
+  .item-link {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: $black-color;
+    transition: .3s;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      left: 0;
+      bottom: -5px;
+      background-color: $black-color;
+      transition: .3s;
+    }
+    &:hover {
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+  .link-subtitle {
+    display: block;
+    font-size: 1.8rem;
+  }
+
+  .portfolio-prev,
+  .portfolio-next {
+    width: 40px;
+    height: 40px;
+    &:before {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  .portfolio-prev {
+    left: -10;
+    &:before {
+      left: 15px;
+    }
+  }
+
+  .portfolio-next {
+    right: -10;
+    &:before {
+      right: 15px;
+    }
+  }
+}

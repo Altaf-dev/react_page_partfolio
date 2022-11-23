@@ -2,8 +2,7 @@
 
 
 .certificate {
-  padding: 100px 0;
-  background-color: $block-bg;
+  padding: 50px 0;
 
   .title {
     text-align: center;
@@ -16,8 +15,7 @@
 
   .certificate-item {
     position: relative;
-    width: 375px;
-    height: 270px;
+    height: 425px;
     overflow: hidden;
     border-radius: 5px;
     transition: .3s opacity 1s;
@@ -37,6 +35,9 @@
     &:hover {
       &:before {
         opacity: 1;
+      }
+      .certificate-img {
+        filter: blur(5px);
       }
       .certificate-link {
         top: 50%;
@@ -84,61 +85,12 @@
     }
   }
 
-  .certificate-prev,
-  .certificate-next {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.3);
-    z-index: 10;
-    cursor: pointer;
-    transition: .3s;
-    &:before {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      top: 50%;
-      border-bottom: 3px solid $black-color;
-      transition: .3s;
-    }
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.6);
-    }
-  }
-
   .certificate-prev {
     left: -35px;
-    &:before {
-      left: 11px;
-      border-left: 3px solid $black-color;
-      transform: translate(0, -50%) rotate(45deg);
-    }
-    &:hover {
-      &:before {
-        border-left: 3px solid $decor-color;
-        border-bottom: 3px solid $decor-color;
-      }
-    }
   }
 
   .certificate-next {
     right: -35px;
-    &:before {
-      right: 11px;
-      border-right: 3px solid $black-color;
-      transform: translate(0, -50%) rotate(-45deg);
-    }
-    &:hover {
-      &:before {
-        border-right: 3px solid $decor-color;
-        border-bottom: 3px solid $decor-color;
-      }
-    }
   }
 }
 

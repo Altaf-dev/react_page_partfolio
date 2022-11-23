@@ -1,7 +1,6 @@
 @import "../style/color";
 
 .main {
-  padding-bottom: 100px;
 
   &__headline {
     display: flex;
@@ -15,6 +14,7 @@
 
   &__headline-title {
     width: min-content;
+    margin: 0;
     @media screen and (max-width: 1199px) {
       width: fit-content;
       margin-bottom: 20px;
